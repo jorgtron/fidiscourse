@@ -3,6 +3,8 @@
 # version: 0.1
 # authors: JT
 
+gem 'stock_quote'
+
 register_asset "javascripts/alert.js"
 register_asset "javascripts/numberanimate.js"
 
