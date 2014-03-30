@@ -8,25 +8,21 @@ register_asset "javascripts/numberanimate.js"
 
 load File.expand_path("../stock.rb", __FILE__)
 
-StockPlugin = StockPlugin
+FidiscoursePlugin = FidiscoursePlugin
     
-    
-  
-
-
 
     ##::PluginStore.get("poll", vote_key(user))
 
 after_initialize do
 
-  module StockPlugin
+  module FidiscoursePlugin
 
     class Engine < ::Rails::Engine
-      engine_name "stock_plugin"
-      isolate_namespace StockPlugin
+      engine_name "fidiscourse_plugin"
+      isolate_namespace FidiscoursePlugin
     end
 
-    class StockController < ActionController::Base
+    class FidiscourseController < ActionController::Base
       include CurrentUser
 
       # update stock price
@@ -106,7 +102,7 @@ after_initialize do
 
   end
 
-  StockPlugin::Engine.routes.draw do
+  FidiscoursePlugin::Engine.routes.draw do
     get '/stock_data' => 'stock#stock_data'
     get '/user_stock' => 'stock#get_user_stock'
     get '/set_user_stock' => 'stock#set_user_stock'
@@ -116,7 +112,7 @@ after_initialize do
   end
 
   Discourse::Application.routes.append do
-    mount ::StockPlugin::Engine, at: '/stock'
+    mount ::FidiscoursePlugin::Engine, at: '/stock'
   end
 
 
