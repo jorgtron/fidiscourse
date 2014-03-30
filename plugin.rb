@@ -3,8 +3,6 @@
 # version: 0.1
 # authors: JT
 
-gem 'stock_quote'
-
 register_asset "javascripts/alert.js"
 register_asset "javascripts/numberanimate.js"
 
@@ -12,8 +10,7 @@ load File.expand_path("../stock.rb", __FILE__)
 
 StockPlugin = StockPlugin
     
-
-    ##::PluginStore.get("poll", vote_key(user))
+gem 'stock_quote'
 
 after_initialize do
 
