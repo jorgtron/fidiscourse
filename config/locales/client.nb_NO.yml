@@ -938,7 +938,7 @@ nb_NO:
         help: "følgte diskusjoner med uleste innlegg"
       new:
         title:
-          zero: "Nye siden sist2"
+          zero: "Nye siden sist"
           one: "Nye siden sist (1)"
           other: "Nye siden sist ({{count}})"
         help: "nye diskusjoner siden ditt siste besøk"
@@ -954,7 +954,6 @@ nb_NO:
 
     browser_update: 'Desverre,<a href="http://www.discourse.org/faq/#browser">nettleseren din er for gammel for  å fungere med Discourse</a>. Vennligst <a href="http://browsehappy.com">oppgrader</a>.'
 
-  
   # This section is exported to the javascript for i18n in the admin section
   admin_js:
     type_to_filter: "type to filter..."
