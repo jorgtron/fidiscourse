@@ -1,6 +1,6 @@
-module ::FidiscoursePlugin
+module ::StockPlugin
 
-  class Fidiscourse
+  class Stock
     
   end
 end
