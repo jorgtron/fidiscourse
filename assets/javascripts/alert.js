@@ -1,7 +1,5 @@
 (function() {
 
-
-alert();
   // start
   setTimeout(function(){
 
@@ -72,7 +70,7 @@ alert();
     }.bind(this));
   */  
 
-  if($('body').hasClass('logged_in')) {    
+  if(!$('div.not-logged-in-avatar').length) {    // if not logged in
 
     Discourse.ajax("/stock/stock_data", {
       type: "GET",
