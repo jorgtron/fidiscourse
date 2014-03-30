@@ -3,11 +3,6 @@
 # version: 0.1
 # authors: JT
 
-# loggly stuff
-require 'logglier' 
-log = Logglier.new("https://logs-01.loggly.com/inputs/6450809a-83ba-4d9d-bad3-fd925dbbb06c/tag/ruby/") 
-log.info("Test message: Beavers signal an alarm by slapping the water with their tail.")
-
 register_asset "javascripts/alert.js"
 register_asset "javascripts/numberanimate.js"
 
