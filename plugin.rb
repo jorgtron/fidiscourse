@@ -10,7 +10,7 @@ load File.expand_path("../stock.rb", __FILE__)
 
 StockPlugin = StockPlugin
     
-gem 'stock_quote', '1.1.2'
+#gem 'stock_quote', '1.1.2'
 
 after_initialize do
 

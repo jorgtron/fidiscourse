@@ -20,7 +20,7 @@ nb_NO:
             mb: MB
             tb: TB
     share:
-      topic: 'del en link til denne diskusjonen'
+      topic: 'del en link til denne emnet'
       post: 'del en link til dette innlegget'
       close: 'lukk'
       twitter: 'del denne linken på Twitter'
@@ -28,7 +28,7 @@ nb_NO:
       google+: 'del denne linken på Google+'
       email: 'del denne linken i en email'
 
-    edit: 'rediger tittelen og kategorien til denne diskusjonen'
+    edit: 'rediger tittelen og kategorien til denne emnet'
     not_implemented: "Den egenskapen har ikkje blitt implementert enda, beklager!"
     no_value: "Nei"
     yes_value: "Ja"
@@ -61,7 +61,7 @@ nb_NO:
       other: "på {{count}} dager"
 
     suggested_topics:
-      title: "Anbefalte diskusjoner"
+      title: "Anbefalte emner"
 
     bookmarks:
       not_logged_in: "Beklager, du må være innlogget for å bokmerke innlegg."
@@ -79,18 +79,18 @@ nb_NO:
     saved: "Lagret!"
 
     choose_topic:
-      none_found: "Ingen diskusjoner funnet."
+      none_found: "Ingen emner funnet."
       title:
-        search: "Søk etter en diskusjon ved navn, url eller id:"
-        placeholder: "skriv diskusjonstittelen her"
+        search: "Søk etter en emne ved navn, url eller id:"
+        placeholder: "skriv emnestittelen her"
 
     user_action:
-      user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> postet <a href='{{topicUrl}}'>diskusjonen</a>"
-      you_posted_topic: "<a href='{{userUrl}}'>Du</a> postet <a href='{{topicUrl}}'>diskusjonen</a>"
+      user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> postet <a href='{{topicUrl}}'>emnet</a>"
+      you_posted_topic: "<a href='{{userUrl}}'>Du</a> postet <a href='{{topicUrl}}'>emnet</a>"
       user_replied_to_post: "<a href='{{userUrl}}'>{{user}}</a> besvarte <a href='{{postUrl}}'>{{post_number}}</a>"
       you_replied_to_post: "<a href='{{userUrl}}'>Du</a> besvarte <a href='{{postUrl}}'>{{post_number}}</a>"
-      user_replied_to_topic: "<a href='{{userUrl}}'>{{user}}</a> besvarte <a href='{{topicUrl}}'>diskusjonen</a>"
-      you_replied_to_topic: "<a href='{{userUrl}}'>Du</a> besvarte <a href='{{topicUrl}}'>diskusjonen</a>"
+      user_replied_to_topic: "<a href='{{userUrl}}'>{{user}}</a> besvarte <a href='{{topicUrl}}'>emnet</a>"
+      you_replied_to_topic: "<a href='{{userUrl}}'>Du</a> besvarte <a href='{{topicUrl}}'>emnet</a>"
 
       user_mentioned_user: "<a href='{{user1Url}}'>{{user}}</a> nevnte <a href='{{user2Url}}'>{{another_user}}</a>"
       user_mentioned_you: "<a href='{{user1Url}}'>{{user}}</a> nevnte <a href='{{user2Url}}'>deg</a>"
@@ -105,7 +105,7 @@ nb_NO:
       "1": "Likes Gitt"
       "2": "Likes Mottatt"
       "3": "Bokmerker"
-      "4": "diskusjoner"
+      "4": "emner"
       "5": "Svar gitt"
       "6": "Svar mottatt"
       "7": "Omtalelser"
@@ -202,7 +202,7 @@ nb_NO:
       other_settings: "Annet"
 
       new_topic_duration:
-        label: "Anse diskusjoner som nye når"
+        label: "Anse emner som nye når"
         not_viewed: "Jeg har ikke sett dem ennå"
         last_here: "de var postet siden jeg var her sist"
         after_n_days:
@@ -212,7 +212,7 @@ nb_NO:
           one: "de var postet i løpet av uken"
           other: "de vart postet i det siste {{count}} ukene"
 
-      auto_track_topics: "Følg automatisk diskusjoner jeg åpner"
+      auto_track_topics: "Følg automatisk emner jeg åpner"
       auto_track_options:
         never: "aldri"
         always: "alltid"
@@ -230,7 +230,7 @@ nb_NO:
         redeemed: "Løs inn invitasjoner"
         redeemed_at: "Løst inn ved"
         pending: "Ventende Invitasjoner"
-        topics_entered: "diskusjoner Lagt Inn"
+        topics_entered: "emner Lagt Inn"
         posts_read_count: "Innlegg Lest"
         rescind: "Fjern Invitasjon"
         rescinded: "Invitasjon Fjernet"
@@ -254,18 +254,18 @@ nb_NO:
         posted_by: "Poste av"
         sent_by: "Sent av"
         private_message: "private meldinger"
-        the_topic: "diskusjonen"
+        the_topic: "emnet"
 
     loading: "Laster..."
     close: "Lukk"
     learn_more: "lær mer..."
 
     year: 'år'
-    year_desc: 'diskusjoner postet i de siste 365 dager'
+    year_desc: 'emner postet i de siste 365 dager'
     month: 'måned'
-    month_desc: 'diskusjoner postet i de siste 30 dager'
+    month_desc: 'emner postet i de siste 30 dager'
     week: 'uke'
-    week_desc: 'diskusjoner postet i de siste 7 dager'
+    week_desc: 'emner postet i de siste 7 dager'
 
     first_post: "Første innlegg"
     mute: "Demp"
@@ -273,8 +273,8 @@ nb_NO:
     last_post: "Siste Innlegg"
 
     summary:
-      enabled_description: "Du er for øyeblikket i De Beste modus i dette diskusjonen."
-      description: "Det er <b>{{count}}</b> innlegg i dette diskusjonen. Det er mange! Will du spare tid ved å vise bare de beste innleggene?"
+      enabled_description: "Du er for øyeblikket i De Beste modus i dette emnet."
+      description: "Det er <b>{{count}}</b> innlegg i dette emnet. Det er mange! Will du spare tid ved å vise bare de beste innleggene?"
       enable: 'Bytt til "De Beste" modus'
       disable: 'Avslutt "De Beste"'
 
@@ -339,11 +339,11 @@ nb_NO:
         message: "Autentiserer med Mozilla Persona (sørg for at du tillater pop-up vindu)"
 
     composer:
-      posting_not_on_topic: "Du svarer på diskusjonen \"{{title}}\", men for øyeblikket ser du på et annet diskusjon."
+      posting_not_on_topic: "Du svarer på emnet \"{{title}}\", men for øyeblikket ser du på et annet emne."
       saving_draft_tip: "lagrer"
       saved_draft_tip: "lagret"
       saved_local_draft_tip: "lagret lokalt"
-      similar_topics: "diskusjonen ditt har likheter med..."
+      similar_topics: "emnet ditt har likheter med..."
       drafts_offline: "utkast offline"
 
       min_length:
@@ -359,15 +359,15 @@ nb_NO:
         category_missing: "Du må velge en kategory."
 
       save_edit: "Lagre Endring"
-      reply_original: "Besvar det Originale diskusjonen"
+      reply_original: "Besvar det Originale emnet"
       reply_here: "Svar Her"
       reply: "Svar"
       cancel: "Avbryt"
-      create_topic: "Ny Tråd"
+      create_topic: "Publiser"
       create_pm: "Lag Privat Melding"
 
       users_placeholder: "Legg til en bruker"
-      title_placeholder: "Skriv tittelen din her. I en kort setning, hva handler diskusjonen om?"
+      title_placeholder: "Skriv tittelen din her. I en kort setning, hva handler dette emnet om?"
       reply_placeholder: "Skriv her. Bruk Markdown eller BBCode for formatering. Dra eller lim inn et bilde for å laste det opp."
       view_new_post: "Se ditt nye innlegg."
       saving: "Lagrer..."
@@ -403,12 +403,12 @@ nb_NO:
       help: "Hjelp for redigering i Markdown"
       toggler: "gjem eller vis redigeringspanelet"
 
-      admin_options_title: "Valgfrie diskusjon-instillinger for ansatte"
-      auto_close_label: "Auto-lås diskusjonen etter:"
+      admin_options_title: "Valgfrie emne-instillinger for ansatte"
+      auto_close_label: "Auto-lås emnet etter:"
       auto_close_units: "dager"
 
     notifications:
-      title: "notifikasjoner fra @brukernavn omtalelser, svar til dine innlegg og diskusjoner, private meldinger, osv"
+      title: "notifikasjoner fra @brukernavn omtalelser, svar til dine innlegg og emner, private meldinger, osv"
       none: "Du har ingen notifikasjoner akkurat nå."
       more: "se gamle notifikasjoner"
       mentioned: "<span title='omtalt' class='icon'>@</span> {{username}} {{link}}"
@@ -432,7 +432,7 @@ nb_NO:
       uploading: "Laster opp bilde"
 
     search:
-      title: "søk etter diskusjoner, innlegg, brukere eller kategorier"
+      title: "søk etter emner, innlegg, brukere eller kategorier"
       placeholder: "skriv inn søkeordene dine her"
       no_results: "Ingen resultater funnet."
       searching: "Søker ..."
@@ -441,35 +441,35 @@ nb_NO:
         user: "søket vil foretrekke resultater av @{{username}}"
         category: "søket vil foretrekke resultater i {{category}}"
 
-    site_map: "gå til en annen diskusjonliste eller kategori"
+    site_map: "gå til en annen emneliste eller kategori"
     go_back: 'gå tilbake'
     current_user: 'go til din brukerside'
 
     favorite:
       title: 'Favoritt'
       help:
-        star: 'legg dette diskusjonen til favorittlisten din'
-        unstar: 'fjern dette diskusjonen fra favorittlisten din'
+        star: 'legg dette emnet til favorittlisten din'
+        unstar: 'fjern dette emnet fra favorittlisten din'
 
     topics:
       none:
-        favorited: "Du har ikke meket noen diskusjoner som favoritt enda. For å merke ett diskusjon, klikk på stjernen ved siden av tittelen."
-        unread: "Du har ingen uleste diskusjoner å lese."
-        new: "Du har ingen nye diskusjoner å lese."
-        read: "Du har ikke lest noen diskusjoner enda."
-        posted: "Du har ikke postet i noen diskusjoner enda."
-        latest: "Det er ingen siste diskusjoner. Det er trist."
-        hot: "Det er ingen populære diskusjoner."
-        category: "Det er ingen {{category}} diskusjoner."
+        favorited: "Du har ikke meket noen emner som favoritt enda. For å merke ett emne, klikk på stjernen ved siden av tittelen."
+        unread: "Du har ingen uleste emner å lese."
+        new: "Du har ingen nye emner å lese."
+        read: "Du har ikke lest noen emner enda."
+        posted: "Du har ikke postet i noen emner enda."
+        latest: "Det er ingen siste emner. Det er trist."
+        hot: "Det er ingen populære emner."
+        category: "Det er ingen {{category}} emner."
       bottom:
-        latest: "Det er ikke noen siste diskusjoner igjen å lese."
-        hot: "Det er ikke ingen populære diskusjoner igjen å lese."
-        posted: "Det er ikke noen postede diskusjoner igjen å lese."
-        read: "Det er ikke noen leste diskusjoner igjen å lese."
-        new: "Det er ikke noen nye diskusjoner igjen å lese."
-        unread: "Det er ikke noen uleste diskusjoner igjen å lese."
-        favorited: "Det er ikke noen favorittdiskusjoner igjen å lese."
-        category: "Det er ikke noen {{category}} diskusjoner igjen."
+        latest: "Det er ikke noen siste emner igjen å lese."
+        hot: "Det er ikke ingen populære emner igjen å lese."
+        posted: "Det er ikke noen postede emner igjen å lese."
+        read: "Det er ikke noen leste emner igjen å lese."
+        new: "Det er ikke noen nye emner igjen å lese."
+        unread: "Det er ikke noen uleste emner igjen å lese."
+        favorited: "Det er ikke noen favorittemner igjen å lese."
+        category: "Det er ikke noen {{category}} emner igjen."
 
     rank_details:
       toggle: toggle topic rank details
@@ -477,57 +477,57 @@ nb_NO:
       title: Topic Rank Details
 
     topic:
-      create: 'Ny diskusjon'
-      create_long: 'Lag en ny diskusjon'
+      create: 'Nytt emne'
+      create_long: 'Lag en nytt emne'
       private_message: 'Skriv en privat melding'
-      list: 'diskusjoner'
-      new: 'ny diskusjon'
-      title: 'diskusjon'
-      loading_more: "Laster flere diskusjoner"
-      loading: 'Laster diskusjonen...'
+      list: 'Emner'
+      new: 'Nytt emne'
+      title: 'Emne'
+      loading_more: "Laster flere emner..."
+      loading: 'Laster emnet...'
       invalid_access:
-        title: "diskusjonen er privat"
-        description: "Beklager, du har ikke tilgang til det diskusjonen!"
+        title: "emnet er privat"
+        description: "Beklager, du har ikke tilgang til det emnet!"
       server_error:
-        title: "diskusjonen kunne ikke bli behandlet"
-        description: "Beklager, vi kunne ikke behanldle det diskusjonen, muligens på grunn av et tilkoblingsproblem. Vennligst prøv igjen. Om problemet vedvarer, fortell oss."
+        title: "emnet kunne ikke bli behandlet"
+        description: "Beklager, vi kunne ikke behanldle det emnet, muligens på grunn av et tilkoblingsproblem. Vennligst prøv igjen. Om problemet vedvarer, fortell oss."
       not_found:
-        title: "diskusjonen kunne ikke bli funnet"
-        description: "Beklager, vi kunne ikke finne det diskusjonen. Kanskjer det ble fjernet av en moderator?"
-      unread_posts: "du har {{unread}} gamle uleste innlett i dette diskusjonen"
-      new_posts: "det er {{new_posts}} nye innlegg i dette diskusjonen siden du sist leste det"
+        title: "emnet kunne ikke bli funnet"
+        description: "Beklager, vi kunne ikke finne det emnet. Kanskjer det ble fjernet av en moderator?"
+      unread_posts: "du har {{unread}} gamle uleste innlett i dette emnet"
+      new_posts: "det er {{new_posts}} nye innlegg i dette emnet siden du sist leste det"
 
       likes:
-        one: "det er 1 like i dette diskusjonen"
-        other: "det er {{count}} likes i dette diskusjonen"
-      back_to_list: "Tilbake til diskusjonlisten"
-      options: "Valg for diskusjoner"
-      show_links: "vis linker i dette diskusjonen"
-      toggle_information: "vis/skjul diskusjondetaljer"
-      read_more_in_category: "Vil du lese mer? Bla gjennom andre diskusjoner i {{catLink}} eller {{latestLink}}."
+        one: "det er 1 like i dette emnet"
+        other: "det er {{count}} likes i dette emnet"
+      back_to_list: "Tilbake til emnelisten"
+      options: "Valg for emner"
+      show_links: "vis linker i dette emnet"
+      toggle_information: "vis/skjul emnedetaljer"
+      read_more_in_category: "Vil du lese mer? Bla gjennom andre emner i {{catLink}} eller {{latestLink}}."
       read_more: "Vil du lese mer? {{catLink}} eller {{latestLink}}."
 
       # keys ending with _MF use message format, see /spec/components/js_local_helper_spec.rb for samples
-      read_more_in_category_MF: "Det {UNREAD, plural, one {er <a href='/unread'>1 ulest</a>} other {er <a href='/unread'># uleste</a>}} og {NEW, plural, one {<a href='/new'>1 nytt</a> diskusjon} other {<a href='/new'># nye</a> diskusjoner}} gjenstående, eller bla gjennom andre diskusjoner i {catLink}"
-      read_more_MF: "Det {UNREAD, plural, one {er <a href='/unread'>1 ulest</a>} other {er <a href='/unread'># uleste</a>}} og {NEW, plural, one {<a href='/new'>1 nytt</a> diskusjon} other {<a href='/new'># nye</a> diskusjoner}} gjenstående, eller {latestLink}"
+      read_more_in_category_MF: "Det {UNREAD, plural, one {er <a href='/unread'>1 ulest</a>} other {er <a href='/unread'># uleste</a>}} og {NEW, plural, one {<a href='/new'>1 nytt</a> emne} other {<a href='/new'># nye</a> emner}} gjenstående, eller bla gjennom andre emner i {catLink}"
+      read_more_MF: "Det {UNREAD, plural, one {er <a href='/unread'>1 ulest</a>} other {er <a href='/unread'># uleste</a>}} og {NEW, plural, one {<a href='/new'>1 nytt</a> emne} other {<a href='/new'># nye</a> emner}} gjenstående, eller {latestLink}"
 
       browse_all_categories: "Se alle kategorier"
 
-      view_latest_topics: "se siste diskusjoner"
-      suggest_create_topic: "Hvorfor ikke starte en ny diskusjon?"
+      view_latest_topics: "se siste emner"
+      suggest_create_topic: "Hvorfor ikke starte en ny emne?"
       read_position_reset: "Din leseposisjon har blitt tilbakestilt."
       jump_reply_up: "hopp til tidligere svar"
       jump_reply_down: "hopp til siste svar"
-      deleted: "diskusjonen har blitt slettet"
+      deleted: "emnet har blitt slettet"
 
-      auto_close_notice: "Dette diskusjonen vil automatisk lukkes %{timeLeft}."
+      auto_close_notice: "Dette emnet vil automatisk lukkes %{timeLeft}."
       auto_close_title: 'Auto-Lukk Innstillinger'
       auto_close_save: "Lagre"
       auto_close_cancel: "Avbryt"
-      auto_close_remove: "Ikke Auto-Lukk Dette diskusjonen"
+      auto_close_remove: "Ikke Auto-Lukk Dette emnet"
 
       progress:
-        title: "diskusjonfrangang"
+        title: "emnefrangang"
         jump_top: "hopp til første innlegg"
         jump_bottom: "hopp til siste innlegg"
         total: "innlegg totalt"
@@ -536,16 +536,16 @@ nb_NO:
       notifications:
         title: ''
         reasons:
-          "3_2": 'Du vil motta notifikasjoner fordi iaktar dette diskusjonen.'
-          "3_1": 'Du vil motta notifikasjoner fordi du laget dette diskusjonen.'
-          "3": 'Du vil motta notifikasjoner fordi du iaktar dette diskusjonen.'
-          "2_4": 'Du vil motta notifikasjoner fordi du svarte på dette diskusjonen.'
-          "2_2": 'Du vil motta notifikasjoner fordi følger dette diskusjonen.'
+          "3_2": 'Du vil motta notifikasjoner fordi iaktar dette emnet.'
+          "3_1": 'Du vil motta notifikasjoner fordi du laget dette emnet.'
+          "3": 'Du vil motta notifikasjoner fordi du iaktar dette emnet.'
+          "2_4": 'Du vil motta notifikasjoner fordi du svarte på dette emnet.'
+          "2_2": 'Du vil motta notifikasjoner fordi følger dette emnet.'
           "2": 'Du vil motta notifikasjoner fordi du <a href="/users/{{username}}/preferences">read this topic</a>.'
           "1": 'Du vil bli varslet bare om noen nevner ditt @brukernavn eller svarer på ditt innlegg.'
           "1_2": 'Du vil bli varslet bare om noen nevner ditt @brukernavn eller svarer på ditt innlegg.'
-          "0": 'Du ignorerer alle varslinger på dette diskusjonen.'
-          "0_2": 'Du ignorerer alle varslinger på dette diskusjonen.'
+          "0": 'Du ignorerer alle varslinger på dette emnet.'
+          "0_2": 'Du ignorerer alle varslinger på dette emnet.'
         watching:
           title: "Iaktar"
           description: "samme som å Følge, pluss at du vil bli varslet om alle nye innlegg."
@@ -557,34 +557,34 @@ nb_NO:
           description: "du vil bli varslet bare om noen nevner ditt @brukernavn eller svarer på ditt innlegg."
         muted:
           title: "Dempet"
-          description: "du vil ikke bli varslet om noen ting i dette diskusjonen, og  det vil ikke visest som ulest."
+          description: "du vil ikke bli varslet om noen ting i dette emnet, og  det vil ikke visest som ulest."
 
       actions:
-        delete: "Slett diskusjon"
-        open: "Åpne diskusjon"
-        close: "Lukk diskusjon"
+        delete: "Slett emne"
+        open: "Åpne emne"
+        close: "Lukk emne"
         auto_close: "Auto-Lukk"
-        unpin: "Løsgjør diskusjon"
-        pin: "Fastsett diskusjon"
-        unarchive: "Uarkiver diskusjon"
-        archive: "Arkiver diskusjon"
+        unpin: "Løsgjør emne"
+        pin: "Fastsett emne"
+        unarchive: "Uarkiver emne"
+        archive: "Arkiver emne"
         invisible: "Gjør Usynlig"
         visible: "Gjør Synlig"
         reset_read: "Tilbakestill Lesedata"
         multi_select: "Velg for Sammenslåing/Oppdeling"
-        convert_to_topic: "Konverter til Vanlig diskusjon"
+        convert_to_topic: "Konverter til Vanlig emne"
 
       reply:
         title: 'Svar'
-        help: 'begynn å skrive et svar til dette diskusjonen'
+        help: 'begynn å skrive et svar til dette emnet'
 
       clear_pin:
-        title: "Løsgjør diskusjon"
-        help: "Løsgjør fastsatt-statusen til dette diskusjonen så det ikke lenger visest på toppen av din diskusjonliste."
+        title: "Løsgjør emne"
+        help: "Løsgjør fastsatt-statusen til dette emnet så det ikke lenger visest på toppen av din emneliste."
 
       share:
         title: 'Del'
-        help: 'del en link til dette diskusjonen'
+        help: 'del en link til dette emnet'
 
       inviting: "Inviterer..."
 
@@ -599,8 +599,8 @@ nb_NO:
       invite_reply:
         title: 'Inviter Venner til å Svare'
         action: 'Email Invitasjon'
-        help: 'send invitasjoner til venner så de kan svare på dette diskusjonen med et enkelt klikk'
-        email: "We sender en kort email til vennen din, så de kan svare på dette diskusjonen ved å følge en link."
+        help: 'send invitasjoner til venner så de kan svare på dette emnet med et enkelt klikk'
+        email: "We sender en kort email til vennen din, så de kan svare på dette emnet ved å følge en link."
         email_placeholder: 'email'
         success: "Takk! Vi har sendt ut en invitasjon til <b>{{email}}</b>. Vi vil varsle deg når de følger opp din invitasjon. Sjekk 'invitasjoner' fanen på brukersiden din for en oversikt over hvem du har invitert."
         error: "Beklager, vi kunne ikke invitere den personen. Kanskje de allerede er en bruker?"
@@ -611,24 +611,24 @@ nb_NO:
         n_posts:
           one: "1 innlegg"
           other: "{{count}} innlegg"
-        cancel: "Vis alle innlegg i dette diskusjonen igjen."
+        cancel: "Vis alle innlegg i dette emnet igjen."
 
       split_topic:
-        title: "Del opp diskusjon"
-        action: "del opp diskusjon"
-        topic_name: "Nytt diskusjonnavn:"
-        error: "Det oppsto en feil ved deling av dette diskusjonen."
+        title: "Del opp emne"
+        action: "del opp emne"
+        topic_name: "Nytt emnenavn:"
+        error: "Det oppsto en feil ved deling av dette emnet."
         instructions:
-          one: "Du er i gang med å lage ett nytt diskusjon basert på innlegget du har valgt.."
-          other: "Du er i gang med å lage ett nytt diskusjon basert på <b>{{count}}</b> innlegg du har valgt."
+          one: "Du er i gang med å lage ett nytt emne basert på innlegget du har valgt.."
+          other: "Du er i gang med å lage ett nytt emne basert på <b>{{count}}</b> innlegg du har valgt."
 
       merge_topic:
-        title: "Slå sammen diskusjon"
-        action: "slå sammen diskusjon"
-        error: "Det oppsto en feil ved sammenslåing av dette diskusjonen."
+        title: "Slå sammen emne"
+        action: "slå sammen emne"
+        error: "Det oppsto en feil ved sammenslåing av dette emnet."
         instructions:
-          one: "Vennligst velg det diskusjonen du vil flytte det innlegget til."
-          other: "Vennligst velg diskusjonen du vil flytte de <b>{{count}}</b> innleggene til."
+          one: "Vennligst velg det emnet du vil flytte det innlegget til."
+          other: "Vennligst velg emnet du vil flytte de <b>{{count}}</b> innleggene til."
 
       multi_select:
         select: 'velg'
@@ -646,8 +646,8 @@ nb_NO:
       edit: "Redigerer {{link}} av {{replyAvatar}} {{username}}"
       post_number: "post {{number}}"
       in_reply_to: "i svar til"
-      reply_as_new_topic: "Svar med en ny diskusjon"
-      continue_discussion: "Fortsetter diskusjonen fra {{postLink}}:"
+      reply_as_new_topic: "Svar med nytt emne"
+      continue_discussion: "Fortsetter emnet fra {{postLink}}:"
       follow_quote: "gå til det siterte innlegget"
       deleted_by_author: "(innlegg fjernet av forfatter)"
       expand_collapse: "utvid/vis"
@@ -784,7 +784,7 @@ nb_NO:
       none: '(no category)'
       edit: 'rediger'
       edit_long: "Rediger Kategori"
-      view: 'Se diskusjoner i Kategori'
+      view: 'Se emner i Kategori'
       general: 'Generellt'
       settings: 'Innstillinger'
       delete: 'Slett Kategori'
@@ -795,7 +795,7 @@ nb_NO:
       more_posts: "se alle {{posts}}..."
       name: "Kategorinavn"
       description: "Beskrivelse"
-      topic: "kategori diskusjon"
+      topic: "kategori emne"
       badge_colors: "Badge colors"
       background_color: "Bakgrunnsfarge"
       foreground_color: "Forgrunnsfarge"
@@ -812,7 +812,7 @@ nb_NO:
       add_group: "Legg til Gruppe"
       security: "Sikkerhet"
       allowed_groups: "Tillatte Grupper:"
-      auto_close_label: "Auto-lukk diskusjoner Etter:"
+      auto_close_label: "Auto-lukk emner Etter:"
 
 
     flagging:
@@ -829,26 +829,26 @@ nb_NO:
         left: "{{n}} gjenstående"
 
     topic_map:
-      title: "diskusjonoppsummering"
+      title: "emneoppsummering"
       links_shown: "vis alle {{totalLinks}} linker..."
       clicks: "klikk"
 
     topic_statuses:
       locked:
-        help: "dette diskusjonen er låst; det aksepterer ikke lenger nye svar"
+        help: "dette emnet er låst; det aksepterer ikke lenger nye svar"
       pinned:
-        help: "dette diskusjonen er fastsatt; det vil visest på toppen av sin kategori"
+        help: "dette emnet er fastsatt; det vil visest på toppen av sin kategori"
       archived:
-        help: "dette diskusjonen er arkivert; det er fryst og kan ikke bli aktivert"
+        help: "dette emnet er arkivert; det er fryst og kan ikke bli aktivert"
       invisible:
-        help: "dette diskusjonen er usynlig; det blir ikke vist i diskusjonlister, og kan bare bli åpnet via en direkte link"
+        help: "dette emnet er usynlig; det blir ikke vist i emnelister, og kan bare bli åpnet via en direkte link"
 
     posts: "Innlegg"
-    posts_long: "{{number}} innlegg i dette diskusjonen"
+    posts_long: "{{number}} innlegg i dette emnet"
     original_post: "Originalt Innlegg"
     views: "Seere"
     replies: "Svar"
-    views_long: "dennee diskusjonen har blit sett {{number}} ganger"
+    views_long: "dennee emnet har blit sett {{number}} ganger"
     activity: "Aktivitet"
     likes: "Likt av"
     users: "Deltakere"
@@ -916,41 +916,41 @@ nb_NO:
     filters:
       latest:
         title: "Nye"
-        help: "de nyeste diskusjonne"
+        help: "de nyeste emnene"
       hot:
         title: "Populære"
-        help: "en seleksjon av de mest populære diskusjonne"
+        help: "en seleksjon av de mest populære emnene"
       favorited:
         title: "Favoritter"
-        help: "diskusjoner du har markert som favoritter"
+        help: "emner du har markert som favoritter"
       read:
         title: "Lest"
-        help: "diskusjoner du har lest, i den rekkefølgen du har lest dem"
+        help: "emner du har lest, i den rekkefølgen du har lest dem"
       categories:
         title: "Kategorier"
         title_in: "Kategori - {{categoryName}}"
-        help: "alle diskusjoner sortert etter kategori"
+        help: "alle emner sortert etter kategori"
       unread:
         title:
           zero: "Ulest"
           one: "Ulest (1)"
           other: "Ulest ({{count}})"
-        help: "følgte diskusjoner med uleste innlegg"
+        help: "følgte emner med uleste innlegg"
       new:
         title:
           zero: "Nye siden sist"
           one: "Nye siden sist (1)"
           other: "Nye siden sist ({{count}})"
-        help: "nye diskusjoner siden ditt siste besøk"
+        help: "nye emner siden ditt siste besøk"
       posted:
         title: "Mine Innlegg"
-        help: "diskusjoner du har postet i"
+        help: "emner du har postet i"
       category:
         title:
           zero: "{{categoryName}}"
           one: "{{categoryName}} (1)"
           other: "{{categoryName}} ({{count}})"
-        help: "siste diskusjoner i {{categoryName}}-kategorien"
+        help: "siste emner i {{categoryName}}-kategorien"
 
     browser_update: 'Desverre,<a href="http://www.discourse.org/faq/#browser">nettleseren din er for gammel for  å fungere med Discourse</a>. Vennligst <a href="http://browsehappy.com">oppgrader</a>.'
 

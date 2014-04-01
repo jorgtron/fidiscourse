@@ -170,9 +170,9 @@
 
 //        console.log('animating');
         $('.stock_change_percent strong').numberAnimate('set', percent_change);
-        $('.stock_my_total_value strong').numberAnimate('set', stock_my_total_value);
-        $('.value_change strong').numberAnimate('set', value_change.toFixed(0));
-        $('.value_change_percent strong').numberAnimate('set', value_change_percent.toFixed(1));
+        if(stock_my_total_value != undefined) { $('.stock_my_total_value strong').numberAnimate('set', stock_my_total_value); }
+        if(value_change != undefined) { $('.value_change strong').numberAnimate('set', value_change.toFixed(0)); }
+        if(!isNaN(value_change_percent)) { $('.value_change_percent strong').numberAnimate('set', value_change_percent.toFixed(1)); }
 
         
         
