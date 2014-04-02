@@ -5,12 +5,13 @@
 
 register_asset "javascripts/alert.js"
 register_asset "javascripts/numberanimate.js"
+register_asset "javascripts/discourse/templates/modal/login.js.handlebars"
 
 load File.expand_path("../stock.rb", __FILE__)
 
 StockPlugin = StockPlugin
     
-gem 'stock_quote', '1.1.2'
+gem 'stock_quote', '1.1.2' ## comment this out on local, but should be there for prod
 
 after_initialize do
 
