@@ -175,14 +175,32 @@
         if(!isNaN(value_change_percent)) { $('.value_change_percent strong').numberAnimate('set', value_change_percent.toFixed(1)); }
 
         
+        //stock.percent_change = '-90%';
         
+        // if negative:
 
-        if(percent_change .indexOf("-")){
-          var value_change_today = stock_my_total_value / (stock.percent_change.replace("%","").replace("+","") - 100) * -1;
+        //percent_change = '-19.5%';
+        if(percent_change.indexOf("-")){
+          
+          value_yesterday = stock_my_total_value * 100;
+          value_yesterday = value_yesterday / (100 - (stock.percent_change.replace("%","").replace("+","")) * -1);
+          console.log(value_yesterday);
+          console.log('diff:' + (stock_my_total_value - value_yesterday));
+
+          var value_change_today = stock_my_total_value - value_yesterday;
+          console.log(value_change_today);
+
         } else {
-          var value_change_today = stock_my_total_value / (stock.percent_change.replace("%","").replace("+","") - 100);
-        }
-        //console.log(value_change_today);
+          
+          value_yesterday = stock_my_total_value * 100;
+          value_yesterday = value_yesterday / (100 - (stock.percent_change.replace("%","").replace("+","")) * -1);
+          console.log(value_yesterday);
+          console.log('diff:' + (stock_my_total_value - value_yesterday));
+
+          var value_change_today = stock_my_total_value - value_yesterday;
+          console.log(value_change_today);
+      }
+        
 
         $('.value_change_today strong').numberAnimate('set', value_change_today.toFixed(0));
 
