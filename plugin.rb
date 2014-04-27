@@ -54,7 +54,7 @@ after_initialize do
       end
 
       def set_stock_data()
-        stock = StockQuote::Stock.quote("funcom.ol").to_json
+        stock = StockQuote::Stock.quote("tsla").to_json
         
         ::PluginStore.set("stock_funcom", 'stock_data', stock)
         ::PluginStore.set("stock_funcom", 'stock_last_updated', Time.now.to_i)
