@@ -99,6 +99,14 @@
         setTimeout(function(){
           getValues();
 
+          $('.stock_last strong').numberAnimate('init');
+          $('.stock_change_percent strong').numberAnimate('init');
+          $('.stock_my_total_value strong').numberAnimate('init');
+          $('.value_change strong').numberAnimate('init');
+          $('.value_change_percent strong').numberAnimate('init');
+          $('.value_change_today strong').numberAnimate('init');
+
+
           $('#num_stocks').on('input', function() {
 
               new_val = parseInt($(this).val());
@@ -113,7 +121,7 @@
               
               });
               //stockTimer(); // refresh calcs
-          }).bind(this);
+          });
 
 
           $('#average_price').on('input', function() {
@@ -132,7 +140,7 @@
 
               });
               //stockTimer(); // refresh calcs
-          }).bind(this);
+          });
 
           $('#stock_data a').on('click', function() {
 
@@ -141,15 +149,9 @@
               //$('#my_stock input:first-child').focus();
               return false;
             
-          }).bind(this);
+          });
 
 
-          $('.stock_last strong').numberAnimate('init');
-          $('.stock_change_percent strong').numberAnimate('init');
-          $('.stock_my_total_value strong').numberAnimate('init');
-          $('.value_change strong').numberAnimate('init');
-          $('.value_change_percent strong').numberAnimate('init');
-          $('.value_change_today strong').numberAnimate('init');
 
         },500);
       }
