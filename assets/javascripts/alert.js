@@ -169,9 +169,12 @@
         percent_change = percent_change.replace(".",",");
 
 //        console.log('animating');
+        value_change_string = value_change.toFixed(0) + '';
+        value_change_string = value_change.replace("+","+$").replace("-","-$");
+        
         $('.stock_change_percent strong').numberAnimate('set', percent_change);
         if(stock_my_total_value != undefined) { $('.stock_my_total_value strong').numberAnimate('set', '$' + stock_my_total_value); }
-        if(value_change != undefined) { $('.value_change strong').numberAnimate('set', value_change.toFixed(0).replace("+","+$").replace("-","-$")); }
+        if(value_change != undefined) { $('.value_change strong').numberAnimate('set', value_change_string); }
         if(!isNaN(value_change_percent)) { $('.value_change_percent strong').numberAnimate('set', value_change_percent.toFixed(1)); }
 
         
@@ -203,7 +206,8 @@
         
         value_change_today = value_change_today.toFixed(0) + '';
         value_change_today = value_change_today.replace("+","+$").replace("-","-$");
-      
+        console.log(value_change_today);
+        
         $('.value_change_today strong').numberAnimate('set', value_change_today);
 
 
