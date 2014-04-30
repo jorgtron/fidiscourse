@@ -87,7 +87,7 @@
 
       if($('#stock_data').length == 0) { // stock data has not already been loaded
 
-        form_html = "<a href=''>Edit my portfolio</a><div id='my_stock'><span class='label'>No. of stocks:</span> <input id='num_stocks' type='text' placeholder='1000' /><span class='label'>Average cost: $</span> <input id='average_price' type='text' placeholder='5,3' /> </div> ";
+        form_html = "<a href=''>Edit my portfolio</a><div id='my_stock'><span class='label'>No. of stocks:</span> <input id='num_stocks' type='text' placeholder='1000' /><span class='label'>Average price per share: $</span> <input id='average_price' type='text' placeholder='5,3' /> </div> ";
 
         stock_html = 
         '<div id="stock_data"><div class="container"><span id="stock_data_inner"><span class="stock_last"><span class="label">TSLA:</span> <strong>' + 0 + '</strong></span> <span class="stock_change_percent">(<strong>' + 0 + '</strong>%)</span> <span class="stock_my_total_value"><span class="label">My portfolio value:</span> <strong>' + 0 + '</strong></span> <span class="value_change_today"><span class="label">Today:</span> <span class="sign">+</span><strong>' + 0 + '</strong></span></span> <span class="value_change"><span><span class="label">P/L:</span></span> <span class="sign">+</span><strong>' + 0 + '</strong></span> <span class="value_change_percent">(<span class="sign">+</span><strong>' + 0 + '</strong>%)</span>' + form_html + '</div></div>' ;
