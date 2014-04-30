@@ -87,7 +87,7 @@
 
       if($('#stock_data').length == 0) { // stock data has not already been loaded
 
-        form_html = "<a href=''>Edit my portfolio</a><div id='my_stock'><span class='label'>No. of stocks:</span> <input id='num_stocks' type='text' placeholder='1000' /><span class='label'>Average price per share: $</span> <input id='average_price' type='text' placeholder='5,3' /> </div> ";
+        form_html = "<a href=''>Edit my portfolio</a><div id='my_stock'><span class='label'># of stocks:</span> <input id='num_stocks' type='text' placeholder='200' /><span class='label'>Price per share: $</span> <input id='average_price' type='text' placeholder='100' /> </div> ";
 
         stock_html = 
         '<div id="stock_data"><div class="container"><span id="stock_data_inner"><span class="stock_last"><span class="label">TSLA:</span> <strong>' + 0 + '</strong></span> <span class="stock_change_percent">(<strong>' + 0 + '</strong>%)</span> <span class="stock_my_total_value"><span class="label">My portfolio value:</span> <strong>' + 0 + '</strong></span> <span class="value_change_today"><span class="label">Today:</span> <span class="sign">+</span><strong>' + 0 + '</strong></span></span> <span class="value_change"><span><span class="label">P/L:</span></span> <span class="sign">+</span><strong>' + 0 + '</strong></span> <span class="value_change_percent">(<span class="sign">+</span><strong>' + 0 + '</strong>%)</span>' + form_html + '</div></div>' ;
@@ -169,12 +169,12 @@
         percent_change = percent_change.replace(".",",");
 
 //        console.log('animating');
-        value_change_string = value_change.toFixed(0) + '';
-        value_change_string = value_change_string.replace("+","+$").replace("-","-$");
+        //value_change_string = value_change.toFixed(0) + '';
+        //value_change_string = value_change_string.replace("+","+$").replace("-","-$");
         
         $('.stock_change_percent strong').numberAnimate('set', percent_change);
         if(stock_my_total_value != undefined) { $('.stock_my_total_value strong').numberAnimate('set', '$' + stock_my_total_value); }
-        if(value_change != undefined) { $('.value_change strong').numberAnimate('set', value_change_string); }
+        if(value_change != undefined) { $('.value_change strong').numberAnimate('set', '$' + value_change.toFixed(0)); }
         if(!isNaN(value_change_percent)) { $('.value_change_percent strong').numberAnimate('set', value_change_percent.toFixed(1)); }
 
         
@@ -204,8 +204,8 @@
           console.log(value_change_today);
       }
         
-        value_change_today_string = value_change_today.toFixed(0) + '';
-        value_change_today_string = value_change_today_string.replace("+","+$").replace("-","-$");
+        value_change_today_string = '$' + value_change_today.toFixed(0);
+        //value_change_today_string = value_change_today_string.replace("+","+$").replace("-","-$");
         console.log(value_change_today);
         
         $('.value_change_today strong').numberAnimate('set', value_change_today_string);
