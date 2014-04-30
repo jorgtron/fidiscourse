@@ -201,8 +201,10 @@
           console.log(value_change_today);
       }
         
-
-        $('.value_change_today strong').numberAnimate('set', value_change_today.toFixed(0).replace("+","+$").replace("-","-$"));
+        value_change_today = value_change_today.toFixed(0) + '';
+        value_change_today = value_change_today.replace("+","+$").replace("-","-$");
+      
+        $('.value_change_today strong').numberAnimate('set', value_change_today);
 
 
         if(percent_change.indexOf("+") >= 0) {
