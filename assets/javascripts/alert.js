@@ -162,7 +162,7 @@
         last_trade_price_only = stock.last_trade_price_only.toString().replace(".",",");
         //last_trade_price_only = stock.ask.toString().replace(".",",");
         //console.log(stock);
-        $('.stock_last strong').numberAnimate('set', last_trade_price_only);
+        $('.stock_last strong').numberAnimate('set', '$' + last_trade_price_only);
         
         percent_change = stock.percent_change.toString();
         percent_change = percent_change.replace("%","");
