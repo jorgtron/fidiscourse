@@ -945,7 +945,7 @@ en:
       [1]: %{invite_link}
 
   invite_forum_mailer:
-    subject_template: "[%{site_name}] You have been invited to join %{site_name}"
+    subject_template: "You have been invited to join %{site_name}"
     text_body_template: |
       
       %{site_name} is a new community for current Tesla stockholders and those interested in investing in TSLA.
