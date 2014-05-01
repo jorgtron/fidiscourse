@@ -950,12 +950,11 @@ en:
       
       %{site_name} is a new community for current Tesla stockholders and those interested in investing in TSLA.
 
-      [Click here to join TeslaInsider %{site_name}][1]
+      [Click here to join %{site_name}][1]
 
       A user account will be set up for you automatically. You can change your username and password by clicking on preferences in the user menu. Please note that this invitation will expire in 7 days, so be sure to claim your account soon.
       
       See you inside!
-      %{invitee_name}
       TeslaInsider.com
       
       [1]: %{invite_link}
