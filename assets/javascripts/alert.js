@@ -1,5 +1,11 @@
 (function() {
 
+  setInterval(function(){
+    
+    $('.user-title:contains("Mesteren")').addClass('mesteren');
+
+  }, 3000);
+  
   // start
   setTimeout(function(){
 
