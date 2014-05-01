@@ -144,10 +144,21 @@
 
           $('#stock_data a').on('click', function() {
 
-              $('#stock_data a').hide();
+            if( $('#stock_data a').text() != 'Lagre') {
+
+              $('#stock_data a').text('Lagre');            
               $('#my_stock').animate({opacity: 1}, 200);
               //$('#my_stock input:first-child').focus();
+                
+            } else { 
+
+              $('#stock_data a').text('Rediger din portefølje');
+              $('#my_stock').animate({opacity: 0}, 0);
+
+            }
+
               return false;
+            
             
           });
 
