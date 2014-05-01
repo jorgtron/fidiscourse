@@ -144,10 +144,21 @@
 
           $('#stock_data a').on('click', function() {
 
-              $('#stock_data a').hide();
+            if( $('#stock_data a').text() != 'Save') {
+
+              $('#stock_data a').text('Save');            
               $('#my_stock').animate({opacity: 1}, 200);
               //$('#my_stock input:first-child').focus();
-              return false;
+                
+            } else { 
+
+              $('#stock_data a').text('Edit my portfolio');
+              $('#my_stock').animate({opacity: 0}, 0);
+
+            }
+
+            return false;
+            
             
           });
 
