@@ -947,10 +947,8 @@ en:
   invite_forum_mailer:
     subject_template: "[%{site_name}] You have been invited you to join %{site_name}"
     text_body_template: |
-      
-      %{site_name} is a new community for current Tesla stockholders and those interested in investing in TSLA.
 
-      To become a TeslaInsider, click the link below to join:
+      To join the community, click the link below to join:
 
       [Visit %{site_name}][1]
 
@@ -959,7 +957,6 @@ en:
       
       See you inside!
       %{invitee_name}
-      TeslaInsider.com
       
       [1]: %{invite_link}
 
