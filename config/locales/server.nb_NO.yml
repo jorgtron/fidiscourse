@@ -948,7 +948,7 @@ en:
     subject_template: "You have been invited to join %{site_name}"
     text_body_template: |
       
-      %{site_name} is a new community for current Tesla stockholders and those interested in investing in TSLA.
+      %{site_name} is a new community for Tesla stockholders and those interested in investing in TSLA.
 
       [Click here to join %{site_name}][1]
 
