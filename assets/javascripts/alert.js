@@ -148,8 +148,10 @@
             
             if(loggedIn){
               
+              ga('send', 'event', 'portfolio', 'click', 'edit-portfolio');
+              
               if( $('#stock_data a').text() != 'Save') {
-  
+                
                 $('#stock_data a').text('Save');            
                 $('#my_stock').animate({opacity: 1}, 200);
                 //$('#my_stock input:first-child').focus();
@@ -161,7 +163,7 @@
   
               }
             
-            } else { $('.btn-primary').trigger('click'); }
+            } else { $('.btn-primary').trigger('click'); ga('send', 'event', 'portfolio', 'click', 'edit-portfolio-notloggedin'); }
             
             return false;
             
