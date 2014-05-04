@@ -76,7 +76,9 @@
     }.bind(this));
   */  
 
-  if(!$('div.not-logged-in-avatar').length) {    // if not logged in
+//  if(!$('div.not-logged-in-avatar').length) {    // if not logged in
+
+if(!$('div.not-logged-in-avatar').length > 0) { loggedIn = true; } else { loggedIn = false;  }
 
     Discourse.ajax("/stock/stock_data", {
       type: "GET",
@@ -149,21 +151,25 @@
           });
 
           $('#stock_data a').on('click', function() {
+          
+            if(loggedIn){
+            
+              if( $('#stock_data a').text() != 'Lagre') {
+  
+                $('#stock_data a').text('Lagre');            
+                $('#my_stock').animate({opacity: 1}, 200);
+                //$('#my_stock input:first-child').focus();
+                  
+              } else { 
+  
+                $('#stock_data a').text('Rediger din portefølje');
+                $('#my_stock').animate({opacity: 0}, 0);
+  
+              }
+            
+            } else { $('.btn-primary').trigger('click'); }
 
-            if( $('#stock_data a').text() != 'Lagre') {
-
-              $('#stock_data a').text('Lagre');            
-              $('#my_stock').animate({opacity: 1}, 200);
-              //$('#my_stock input:first-child').focus();
-                
-            } else { 
-
-              $('#stock_data a').text('Rediger din portefølje');
-              $('#my_stock').animate({opacity: 0}, 0);
-
-            }
-
-              return false;
+            return false;
             
             
           });
@@ -189,6 +195,9 @@
 
 //        console.log('animating');
         $('.stock_change_percent strong').numberAnimate('set', percent_change);
+        
+        if(loggedIn){
+          
         if(stock_my_total_value != undefined) { $('.stock_my_total_value strong').numberAnimate('set', stock_my_total_value); }
         if(value_change != undefined) { $('.value_change strong').numberAnimate('set', value_change.toFixed(0)); }
         if(!isNaN(value_change_percent)) { $('.value_change_percent strong').numberAnimate('set', value_change_percent.toFixed(1)); }
@@ -223,13 +232,15 @@
 
         $('.value_change_today strong').numberAnimate('set', value_change_today.toFixed(0));
 
-
+}
         if(percent_change.indexOf("+") >= 0) {
             $('.stock_change_percent').removeClass('red').addClass('green');
         } else {
             $('.stock_change_percent').removeClass('green').addClass('red');
         }
 
+if(loggedIn){
+  
         if(value_change > 0) {
             $('.value_change .sign').html('+').addClass('green');
             $('.value_change strong').removeClass('red').addClass('green');
@@ -254,7 +265,8 @@
             $('.value_change_today strong').removeClass('green').addClass('red');
             
         }
-
+        
+      }
       },600);
 
     }.bind(this));
@@ -263,9 +275,10 @@
 
   }
 
-}
+//}
 
 function getValues(){
+  if(loggedIn){
     numberShares = parseInt($('#num_stocks').val());
     averagePrice = $('#average_price').val();
 
@@ -283,11 +296,11 @@ function getValues(){
     value_change_percent = ((stock_my_total_value/purchase_value) * 100) - 100;
 
 
-
+}
 
 }
 function getUserStock() { 
-    
+    if(loggedIn){
     // update user stock count on load
     Discourse.ajax("/stock/user_stock", {
       type: "GET",
@@ -301,11 +314,13 @@ function getUserStock() {
       console.log(num_stocks);
       
     }.bind(this));
-
+}
  }
 
  function getUserAveragePrice() { 
-    
+  
+  if(loggedIn){
+  
     var average_price = 0;
     
     // update user stock count on load
@@ -320,7 +335,7 @@ function getUserStock() {
       console.log(average_price);
 
     }.bind(this));
-
+  }
  }
 
 function addThousandsSeparator(input) {
